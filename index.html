@@ -13,17 +13,18 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <div class="nametext">Joo Park</div>
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Developer</p>
+                <p>Fullstack Developer</p>
                 <h1>Hi, I'm <span>Joo</span><br>Welcome to my site!</h1>
             </div>
         </div>
@@ -33,11 +34,17 @@
         <div class="container">
             <div class="row">
                 <div class="about-col1">
-                    <img src="images/user.png">
+                    <img src="images/Joo.Park.EMP.jpg">
                 </div>
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>aaaaskdjas;dkjas;dkjalskdjalskdjalskdjasldkjaldkjaldkjasldkjasldkj</p>
+                    <p>
+                        Hi there! I am a recent graduate from New Jersey Institute of Technology excited to develop. 
+                        I am a very dedicated individual that is quick to pickup new skills and practices when it comes to work. From my 
+                        junior year in college to graduation I had balanced a full-time job while attending college as a full-time student which
+                        improved my time management skills. Work experience-wise I have always had a job to sustain myself since turning the age of 16
+                        which helped develop my teamwork and accountability.
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -45,25 +52,22 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Frontend</span><br>Designing Frontend Web/App</li>
-                            <li><span>Backend</span><br>Implementing Backend Services</li>
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Frontend</span><br>HTML, CSS, Javascript, React</li>
+                            <li><span>Backend</span><br>Java, C++, C#, C, Python, SQL, PHP</li>
                         </ul>
                         
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Fex</span><br>Designing Frontend Web/App</li>
-                            <li><span>Backend</span><br>Implementing Backend Services</li>
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Volvo Cars USA</span><br>Team Lead for Dealer IT Support</li>
+                            <li><span>The Energy Mashup Lab</span><br>Developer</li>
+                            <li><span>Box'it</span><br>Developer</li>
                         </ul>
                         
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Frontend</span><br>Designing Frontend Web/App</li>
-                            <li><span>Backend</span><br>Implementing Backend Services</li>
-                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Bachelor's Degree in Information Technology</span><br>New Jersey Institute of Technology</li>
                         </ul>
                         
                     </div>
@@ -78,57 +82,62 @@
         <div class="container">
             <h1 class="sub-title">Links</h1>
             <div class="links-list">
-                <div>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h2>LinkedIn</h2>
-                    <p>Lorem Ipsum</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-github"></i>
-                    <h2>GitHub</h2>
-                    <p>Lorem Ipsum</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-github"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem Ipsum</p>
-                    <a href="#">Learn more</a>
-                </div>
+                <a href="https://www.linkedin.com/in/jooyong-park/">
+                    <div>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h2>LinkedIn</h2>
+                    </div>
+                </a>
+                <a href="https://github.com/errMeep">
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                        <h2>GitHub</h2>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <i class="fa-solid fa-file"></i>
+                        <h2>Resume</h2>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <!----------Portfolio--------->
-    <div id="portfolio">
+    <div id="projects">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/weather.png">
                     <div class="layer">
-                        <h3> Social Media App</h3>
-                        <p>app connects you to talented tpeople around the world</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3> Weather App</h3>
+                        <p>Application to tell you the current weather. Enter your zip code and you can see
+                            your area's weather info.
+                        </p>
+                        <a href="https://weatherapp-2f36f.web.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/tictactoe.png">
                     <div class="layer">
-                        <h3> Social Media App</h3>
-                        <p>app connects you to talented tpeople around the world</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3> Tic Tac Toe</h3>
+                        <p>Simple web application to play tic tac toe!</p>
+                        <a href="https://errmeep.github.io/tictactoe/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/Potions.png">
                     <div class="layer">
-                        <h3> Social Media App</h3>
-                        <p>app connects you to talented tpeople around the world</p>
-                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Potions VR</h3>
+                        <p>Virtual Reality game on the Google Play Store, Uses the Samsung Gear to interact with 
+                            different types of potions and create different effects.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.meep.potionvr&hl=en_US&gl=US&pli=1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
 </body>
