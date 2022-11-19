@@ -6,9 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0d6dd848eb.js" crossorigin="anonymous"></script>
     <title>My Resume</title>
 </head>
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>Joo</span><br>Welcome to my site!</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>aaaaskdjas;dkjas;dkjalskdjalskdjalskdjasldkjaldkjaldkjasldkjasldkj</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Designing Frontend Web/App</li>
+                            <li><span>Backend</span><br>Implementing Backend Services</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fex</span><br>Designing Frontend Web/App</li>
+                            <li><span>Backend</span><br>Implementing Backend Services</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Frontend</span><br>Designing Frontend Web/App</li>
+                            <li><span>Backend</span><br>Implementing Backend Services</li>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!---------services--------->
+    <div id="links">
+        <div class="container">
+            <h1 class="sub-title">Links</h1>
+            <div class="links-list">
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h2>LinkedIn</h2>
+                    <p>Lorem Ipsum</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>GitHub</h2>
+                    <p>Lorem Ipsum</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem Ipsum</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3> Social Media App</h3>
+                        <p>app connects you to talented tpeople around the world</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3> Social Media App</h3>
+                        <p>app connects you to talented tpeople around the world</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3> Social Media App</h3>
+                        <p>app connects you to talented tpeople around the world</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
