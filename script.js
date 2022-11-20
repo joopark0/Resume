@@ -21,3 +21,13 @@ function closemenu() {
   sidemenu.classList.add('hide_menu');
   sidemenu.classList.remove('show_menu');
 }
+
+const seemorediv = document.querySelector('#secondwork');
+function seemore() {
+  seemorediv.classList.remove('hidden');
+  seemorediv.classList.add('temp');
+  setTimeout(function () {
+    seemorediv.classList.remove('temp');
+    seemorediv.classList.add('active');
+  }, 500);
+}
