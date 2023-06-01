@@ -300,6 +300,9 @@ nav ul li a:hover::after{
     color: black;
     transition: background 0.5s;
 }
+.btn.hidden{
+    display: none;
+}
 
 .btn:hover{
     background: #ff004f;

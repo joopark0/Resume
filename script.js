@@ -22,12 +22,19 @@ function closemenu() {
   sidemenu.classList.remove('show_menu');
 }
 
-const seemorediv = document.querySelector('#secondwork');
+let seemorediv = document.querySelector('#secondwork');
+let seemorebutton = document.querySelector('#more');
+let seecounter = 0;
 function seemore() {
   seemorediv.classList.remove('hidden');
   seemorediv.classList.add('temp');
   setTimeout(function () {
     seemorediv.classList.remove('temp');
     seemorediv.classList.add('active');
+    seemorediv = document.querySelector('#thirdwork');
+    seecounter = seecounter + 1;
+    if (seecounter === 2) {
+      seemorebutton.classList.add('hidden');
+    }
   }, 500);
 }
